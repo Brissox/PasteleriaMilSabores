@@ -1,0 +1,41 @@
+<script>
+// Ejemplo de productos (puedes reemplazar con los tuyos)
+const productos = [
+  { nombre: "Pastel de chocolate", categoria: "pasteles", precio: 5000, descripcion: "Delicioso pastel", imagen: "img/pastel.jpg" },
+  { nombre: "Galletas de avena", categoria: "galletas", precio: 2000, descripcion: "Crujientes y sanas", imagen: "img/galletas.jpg" },
+  { nombre: "Torta frutilla", categoria: "tortas", precio: 8000, descripcion: "Fresca y cremosa", imagen: "img/torta.jpg" }
+];
+
+// Función para mostrar productos
+function mostrarProductos(categoria = "all") {
+  const contenedor = document.getElementById("producto");
+  contenedor.innerHTML = "";
+
+  const filtrados = categoria === "all" ? productos : productos.filter(p => p.categoria === categoria);
+
+  filtrados.forEach(prod => {
+    contenedor.innerHTML += `
+      <div class="col-md-4 mb-3">
+        <div class="card h-100">
+          <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
+          <div class="card-body">
+            <h5 class="card-title">${prod.nombre}</h5>
+            <p class="card-text">${prod.descripcion}</p>
+            <p class="fw-bold">$${prod.precio}</p>
+          </div>
+        </div>
+      </div>
+    `;
+  });
+}
+
+// Evento de cambio en los filtros
+document.querySelectorAll("input[name='categoria']").forEach(radio => {
+  radio.addEventListener("change", (e) => {
+    mostrarProductos(e.target.value);
+  });
+});
+
+// Mostrar todos al inicio
+mostrarProductos();
+</script>

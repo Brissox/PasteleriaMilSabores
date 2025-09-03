@@ -18,7 +18,13 @@
     src: url(/workspaces/fullStack-Js/assets/fonts/Pacifico/Pacifico-Regular.ttf) format('truetype');
     font-weight: 400;
     font-style: normal;
+}
 
+@font-face {
+    font-family: "lato";
+    src: url(/workspaces/fullStack-Js/assets\fonts\Lato\Lato-thin.ttf) format('truetype');
+    font-weight: 400;
+    font-style: normal;
 }
 
 footer {
@@ -43,7 +49,6 @@ header{
  
 }
 
-
 .headerimg{
     height: 200px;      /* mantiene proporción */
     margin-right: 10px;
@@ -56,6 +61,18 @@ header{
     top:-5px;
 }
 
-@media(max-width:700px)
+@media(max-width:700px){}
 
+.section1{
+    flex-direction: column;
+    align-items: center;
+    margin-left: 25px;
+    margin-right: 25px;
+    margin-top: 20px;
+}
 
+body{
+    background-color: #FFF5E1;
+    color: #5D4037;
+     font-family: "lato",sans-serif; 
+}
