@@ -3,8 +3,6 @@ document.getElementById("footer").innerHTML = `
 <footer>
   <div class="footer-content bg-black pt-[40px] pb-4 text-white">
     <section class="footer-nav max-w-[1124px] mx-auto flex flex-col lg:flex-row lg:justify-between">
-      
-      <!-- Navegación -->
       <nav class="lg:flex-1">
         <ul>
           <li class="mb-2">
@@ -24,13 +22,9 @@ document.getElementById("footer").innerHTML = `
           </li>
         </ul>
       </nav>
-
-      <!-- Lado derecho con imagen e íconos -->
       <div class="footer-aside lg:flex-1 lg:border-l lg:border-gray-700 lg:pl-6 mt-6 lg:mt-0">
         <!-- Imagen -->
         <img class="mb-4 w-[120px] h-auto" src="https://img.freepik.com/vector-premium/logotipo-pasteleria-fondo-blanco_1197524-14327.jpg" alt="Jumbo Prime">
-
-        <!-- Íconos sociales -->
        <div class="flex gap-4 text-[24px] text-gray-400">
   <a href="#" target="_blank" aria-label="Instagram">
     <i class="bi bi-instagram hover:text-white transition-colors"></i>
@@ -46,7 +40,6 @@ document.getElementById("footer").innerHTML = `
   </a>
 </div
       </div>
-      
     </section>
   </div>
 </footer>
