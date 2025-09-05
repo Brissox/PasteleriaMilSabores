@@ -76,3 +76,93 @@ body{
     color: #5D4037;
      font-family: "lato",sans-serif; 
 }
+
+    /* Hero con imagen de fondo */
+.hero {
+    background-image: url('../assets/img/a6.png'); /* Ajusta según tu estructura */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+
+.hero h1 {
+      color: white;
+      font-size: 3rem;
+      text-shadow: 0 2px 10px rgba(0,0,0,0.6);
+    }
+
+    /* Contenedor de contenido */
+.content {
+      background-color: white;
+      border-radius: 0.5rem;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 2rem;
+      margin: -100px auto 2rem auto; /* Para superponerse un poco al hero */
+      max-width: 900px;
+    }
+
+.content h2 {
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+
+.content p {
+      line-height: 1.6;
+      color: #555;
+    }
+
+.timeline {
+  position: relative;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.timeline::after {
+  content: '';
+  position: absolute;
+  width: 6px;
+  background-color: #000000; /* color chocolate */
+  top: 0;
+  bottom: 0;
+  left: 50%;
+  margin-left: -3px;
+}
+
+.timeline-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: relative;
+}
+
+.timeline-item.left .content {
+  order: 1;
+  text-align: right;
+}
+.timeline-item.left .image {
+  order: 2;
+}
+
+.timeline-item.right .image {
+  order: 1;
+}
+.timeline-item.right .content {
+  order: 2;
+  text-align: left;
+}
+
+.timeline-item .content, .timeline-item .image {
+  width: 48%;
+}
+
+.timeline-item .image img {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+}

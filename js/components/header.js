@@ -11,7 +11,7 @@ document.getElementById("header").innerHTML = `
                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="catalogoProductos.html">Catalogo</a>
@@ -41,9 +41,9 @@ document.getElementById("header").innerHTML = `
                                 Sobre Nosotros
                             </a>
                             <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Nuestra Historia</a></li>
-                                <li><a class="dropdown-item" href="#">Equipo </a></li>
-                                <li><a class="dropdown-item" href="#">Procesos </a></li>
+                                <li><a class="dropdown-item" href="nuestra-historia.html">Nuestra Historia</a></li>
+                                <li><a class="dropdown-item" href="quienes_somos.html">Equipo </a></li>
+                                <li><a class="dropdown-item" href="procesos.html">Procesos </a></li>
                             </ul>
                         </li>
                            <ul class="navbar-nav ms-auto">
@@ -51,7 +51,7 @@ document.getElementById("header").innerHTML = `
                             <a class="nav-link" href="login.html">Login</a>
                         </li>
                         <li class="nav-item" id="nav-registro">
-                            <a class="nav-link" href="">Registarse</a>
+                            <a class="nav-link" href="registro.html">Registarse</a>
                         </li>
                         <li class="nav-item d-none" id="nav-logout">
                             <a class="nav-link" href="" id="btnLogout">Logout</a>

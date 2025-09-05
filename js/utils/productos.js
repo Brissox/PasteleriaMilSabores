@@ -182,14 +182,14 @@ let contenedorproductos = document.getElementById("producto");
 
 productos.forEach(prod => {
     contenedorproductos.innerHTML += `
-    <div class="col-md-4 mb-3">
+    <div class="col-12 col-sm-6 col-md-4 mb-3">
         <div class="card h-100">
             <img src="${prod.imagen}" class="card-img-top" alt="${prod.nombre}">
-            <div class="card-body">
+            <div class="card-body d-flex flex-column">
                 <h5 class="card-title">${prod.nombre}</h5>
                 <p class="card-text">${prod.descripcion}</p>
                 <p class="fw-bold">$${prod.precio}</p>
-                <button class="btn btn-primary">Comprar</button>
+                <button class="btn btn-primary mt-auto">Comprar</button>
             </div>
         </div>
     </div>
