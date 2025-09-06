@@ -84,6 +84,17 @@ body{
 
     /* Hero con imagen de fondo */
 .hero {
+    background-image: url('.../assets/img/pag_img/pasteleria.jpg'); /* Ajusta según tu estructura */
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero1 {
     background-image: url('../assets/img/a6.png'); /* Ajusta según tu estructura */
     background-size: cover;
     background-position: center;

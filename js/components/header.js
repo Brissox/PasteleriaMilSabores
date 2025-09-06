@@ -1,7 +1,11 @@
 document.getElementById("header").innerHTML = `
 
 <nav class="d-flex justify-content-end align-items-center h-100 py-1 pe-3 nav-brown">
-    <a href="login.html" class="nav-item me-3" id="nav-login">
+                        <form class="d-flex me-5" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search"/>
+                         <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>    
+<a href="login.html" class="nav-item me-3" id="nav-login">
       <i class="bi bi-person-circle"></i> Iniciar Sesión
     </a>
     <a href="registro.html" class="nav-item me-3" id="nav-registro">
@@ -45,7 +49,7 @@ document.getElementById("header").innerHTML = `
                             </ul>
                         </li>
                          <li class="nav-item">
-                            <a class="nav-link" href="#">Sucursales</a>
+                            <a class="nav-link" href="#">Comunidad</a>
                         </li>
                         <li class="nav-item dropdown">
                             <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
