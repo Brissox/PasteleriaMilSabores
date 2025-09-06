@@ -27,6 +27,10 @@
     font-style: normal;
 }
 
+.navbar {
+  height: 70px;        /* altura fija */
+}
+
 footer {
     text-align: center;
     padding: 1rem;
